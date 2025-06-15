@@ -7,7 +7,7 @@ while (num > 0) {
   num = Math.floor(num / 10);
 }
 
-if (original === reversed_n) {
+if (reversed_n === original) {
   console.log("Number is Palindrome");
 } else {
   console.log("Number is not Palindrome");

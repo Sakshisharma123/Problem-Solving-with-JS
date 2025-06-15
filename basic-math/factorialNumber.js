@@ -1,8 +1,17 @@
-let fact = 4;
-let originalFact = fact;
+let fact = 5;
+let mul = 1;
 
-for(let i = originalFact; i> 1; i--){
-    fact = fact * ( i - 1);
+for(let i = 0; i<fact; i++){
+    mul = mul * (fact - i);
 }
+console.log(`Factorial Number: ${mul}`);
 
-console.log(`Factorial Number: ${fact}`);
+
+
+
+
+
+
+
+
+

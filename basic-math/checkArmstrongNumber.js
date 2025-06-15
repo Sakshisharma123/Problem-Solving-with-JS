@@ -1,6 +1,6 @@
 // Armstrong Number -- the sum of cubes of each digit is equal to the number itself.
 
-let num = 125;
+let num = 153;
 let originalNum = num;
 let rem;
 let sum = 0;
@@ -8,7 +8,7 @@ let sum = 0;
 while (num > 0) {
   rem = num % 10;
   sum = sum + rem * rem * rem;
-  num =  Math.floor(num / 10);
+  num = Math.floor(num / 10);
 }
 
 if (originalNum === sum) {
@@ -16,3 +16,5 @@ if (originalNum === sum) {
 } else {
   console.log("Number is not Armstrong");
 }
+
+

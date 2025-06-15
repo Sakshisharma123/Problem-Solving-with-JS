@@ -16,7 +16,7 @@ console.log("Before: ", "a =", a, "b =", b);
 
 // third aproach using drestucting functionality
 
-[a, b] = [b, a];
+// [a, b] = [b, a];
 
 
 console.log("After: ","a =", a, "b =", b);

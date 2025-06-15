@@ -1,8 +1,28 @@
-let num = 100;
+let num = 24;
 let factor;
 
-for(let i = 1; i<=num; i++){
+console.log("All factor:")
+
+for(let i = 1; i<= num; i++){
     if(num%i == 0){
-        console.log(i, " ");
+        console.log(i);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(let i = 1; i<=num; i++){
+//     if(num%i == 0){
+//         console.log(i, " ");
+//     }
+// }
