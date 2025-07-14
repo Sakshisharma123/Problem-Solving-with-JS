@@ -1,20 +1,20 @@
-// ************
-// *****  *****
-// ****    ****
-// ***      ***
-// **        **
-// *          *
 // *          *
 // **        **
 // ***      ***
 // ****    ****
 // *****  *****
 // ************
+// *****  *****
+// ****    ****
+// ***      ***
+// **        **
+// *          *
+
 
 function printPattern(num) {
-  let st = num;
-  let sp = 0;
-  for (let i = 1; i <= 2 * num; i++) {
+  let st = 1;
+  let sp = 2 * num - 2;
+  for (let i = 1; i <= 2 * num - 1; i++) {
     let row = "";
     for (let j = 1; j <= st; j++) {
       row += "*";
@@ -28,14 +28,12 @@ function printPattern(num) {
 
    
     if (i < num) {
-      st--;
-      sp += 2;
-    } else if(i  === num) {
-  
-    }
-    else{
       st++;
       sp -= 2;
+    } 
+    else{
+      st--;
+      sp += 2;
     }
     console.log(row);
   }

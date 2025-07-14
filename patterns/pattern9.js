@@ -34,10 +34,7 @@ function printPattern(num) {
       st -= 2;
       sp++;
     }
-    
     console.log(row);
-   
-
   }
 }
 printPattern(6);
