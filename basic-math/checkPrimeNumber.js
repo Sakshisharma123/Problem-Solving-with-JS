@@ -1,24 +1,40 @@
-// Prime Number -- Number divisible by 1 and number itself.
+// Check for Prime- Number which has only two factor 1 and number itself.
 
-let num = 17;
-let isPrime = true;
+// brute force approach
+// function checkPrime(num) {
+//   let count = 0;
+//   for (let i = 1; i  <= num; i++) {
+//     if (num % i == 0) {
+//       count++;
+//     }
+//   }
 
-if (num <= 1) {
-    isPrime = false;
-} else {
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-        if (num % i === 0) {
-            isPrime = false;
-            break;
-        }
+//   if (count == 2) {
+//     console.log(`${num} is Prime`);
+//   } else {
+//     console.log(`${num} is not Prime`);
+//   }
+// }
+
+
+// optimal approach
+function checkPrime(num) {
+  let count = 0;
+  for (let i = 1; i * i <= num; i++) {
+    if (num % i == 0) {
+      count++;
+
+      if (i !== num / i) {
+        count++;
+      }
     }
+  }
+
+  if (count == 2) {
+    console.log(`${num} is Prime`);
+  } else {
+    console.log(`${num} is not Prime`);
+  }
 }
 
-if (isPrime) {
-    console.log(`${num} is a prime number`);
-} else {
-    console.log(`${num} is not a prime number`);
-}
-
-
-
+checkPrime(13);

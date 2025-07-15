@@ -1,11 +1,15 @@
-let num = 234789;
-let count = 0;
-let rem;
+// Count all Digits of a Number
 
-while (num > 0) {
-  rem = num % 10;
-  num = Math.floor(num / 10);
-  count++;
+function countDigit(num) {
+  let count = 0;
+
+  while (num > 0) {
+    let lastDigit = num % 10;
+    count++;
+    num = Math.floor(num / 10);
+  }
+
+  return count;
+
 }
-
-console.log(`Number of Digits in Number is ${count}`);
+console.log(countDigit(234789));

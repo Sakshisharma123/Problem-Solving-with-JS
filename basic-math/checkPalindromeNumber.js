@@ -1,14 +1,22 @@
-let num = 121;
-let reversed_n = 0;
-let original = num;
+// Palindrome Number
 
-while (num > 0) {
-  reversed_n = reversed_n * 10 + (num % 10);
-  num = Math.floor(num / 10);
+function checkPalindrome(num){
+    let originalNum = num;
+    let reversedNum = 0;
+    let isPalindrome = false;
+
+    while(num > 0){
+      reversedNum = reversedNum * 10  + (num % 10);
+      num = Math.floor(num / 10);
+    }
+
+    if(reversedNum === originalNum){
+      isPalindrome = true;
+    }
+    else{
+      isPalindrome = false;
+    }
+    return isPalindrome;
 }
 
-if (reversed_n === original) {
-  console.log("Number is Palindrome");
-} else {
-  console.log("Number is not Palindrome");
-}
+console.log(checkPalindrome(121));

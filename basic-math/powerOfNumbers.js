@@ -1,7 +1,7 @@
 // find the value of n raised to the power of its own reverse.
 
 
-let number = 13;
+let number = 232;
 let originalNum = number;
 let rem;
 
